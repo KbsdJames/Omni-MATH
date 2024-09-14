@@ -53,8 +53,21 @@ In this report, `Student Final Answer` represents the final output from your mod
 We have provided examples of GPT model evaluations in the directory `./GPT_eval/examples`. Please format the results from GPT-eval in accordance with the examples provided above. Afterward, you can run `bash ./GPT_eval/get_result.sh` to obtain the overall score for the model, scores in different domains, and scores across various difficulty levels.
 
 
-### Omni-Judge
 
+### 2. Omni-Judge
+Due to the high cost of GPT-4o and its limited accessibility, we retained the evaluation data used for the GPT-4o model and adapted it for instruction tuning.
+Omni-Judge builds on the meta-llama/Meta-Llama-3-8B-Instruct, incorporating GPT-4o evaluation data for instruction tuning. The training dataset comprises 21,451 examples, with a total of 2 epochs. Omni-Judge's performance is closely aligned with GPT-4o. We created an internal evaluation set using queries not previously seen by the model, consisting of 2,690 test samples. The agreement rate between Omni-Judge and GPT-4o evaluations is approximately 95%.
+
+For detailed information, please refer to [Omni-Judge](https://huggingface.co/KbsdJames/Omni-Judge).
+
+#### Usage
+1. Prepare the model output file with the same format as `./Omni-Judge_eval/examples_infile`.
+
+2. Run the following command and you will yield a outfile which is similar to the `xxx_gpteval.jsonl`, and the metrics like detailed accuracy etc.
+```bash
+cd ./Omni-Judge_eval
+bash omni_judge.sh
+```
 
 ### 
 ## 🔍 Detailed Source of Omni-MATH
