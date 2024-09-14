@@ -1,7 +1,7 @@
 
 
 <h1 align="center">
-    <img src="./imgs/FullLogo_Transparent.png" alt="Logo" style="height: 4em; vertical-align: middle;"> Omni-MATH
+    <img src="./imgs/FullLogo_Transparent.png" alt="Logo" style="height: 5em; display: inline-block; vertical-align: middle;"> Omni-MATH
 </h1>
 <p align="center">
     <a href="https://github.com/KbsdJames/Omni-MATH">
