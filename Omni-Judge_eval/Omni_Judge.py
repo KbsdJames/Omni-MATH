@@ -53,6 +53,7 @@ def get_batch_responses(
             
             total_pred.extend(batch_pred)
             total_input_ids.extend(batch_input_ids.cpu().tolist())
+            batch = []
 
     responses = []
     for pred, input_ids in zip(total_pred, total_input_ids):
