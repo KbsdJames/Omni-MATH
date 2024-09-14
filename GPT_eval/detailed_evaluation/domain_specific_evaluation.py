@@ -5,9 +5,8 @@ from prettytable import PrettyTable
 from collections import defaultdict
 
 def update_domain(target_entry):
-    cnt = 0
     data_1 = []
-    with open('/mnt/workspace/hard_math/OmniPic_Bench/OmniPic_Bench_v1_final.jsonl') as f:
+    with open('../Omni-Math.jsonl') as f:
         for line in f.readlines():
             data_1.append(json.loads(line))
 
