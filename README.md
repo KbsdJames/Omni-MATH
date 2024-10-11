@@ -4,8 +4,8 @@
     <img src="./imgs/MiniLogo.png" alt="Logo" style="height: 3em; display: inline-block; vertical-align: middle;"> <br>Omni-MATH
 </h1>
 <p align="center">
-    <a href="https://github.com/KbsdJames/Omni-MATH">
-        <img alt="Static Badge" src="https://img.shields.io/badge/Paper-Coming Soon-red">
+    <a href="https://arxiv.org/abs/2410.07985">
+        <img alt="Static Badge" src="https://img.shields.io/badge/Paper-Arxiv-red">
     </a>
     <a href="https://huggingface.co/datasets/KbsdJames/Omni-MATH">
         <img alt="Static Badge" src="https://img.shields.io/badge/HFDataset-OmniMATH-yellow">
@@ -76,5 +76,13 @@ bash omni_judge.sh
 ## 💬 Citation
 If you find our work interesting and meaningful, welcome to give a 🌟 to our repo and cite our paper.
 ```
-Coming Soon.
+@misc{gao2024omnimathuniversalolympiadlevel,
+      title={Omni-MATH: A Universal Olympiad Level Mathematic Benchmark For Large Language Models}, 
+      author={Bofei Gao and Feifan Song and Zhe Yang and Zefan Cai and Yibo Miao and Qingxiu Dong and Lei Li and Chenghao Ma and Liang Chen and Runxin Xu and Zhengyang Tang and Benyou Wang and Daoguang Zan and Shanghaoran Quan and Ge Zhang and Lei Sha and Yichang Zhang and Xuancheng Ren and Tianyu Liu and Baobao Chang},
+      year={2024},
+      eprint={2410.07985},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.07985}, 
+}
 ```
