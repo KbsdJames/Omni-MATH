@@ -64,11 +64,17 @@ For detailed information, please refer to [Omni-Judge](https://huggingface.co/Kb
 1. Prepare the model output file with the same format as `./Omni-Judge_eval/examples_infile`.
 
 2. Run the following command and you will yield a outfile which is similar to the `xxx_gpteval.jsonl`, and the metrics like detailed accuracy etc.
+
+3. **NOTE**: We also add `vllm` version of Omni-Judge to realize efficient inference, which requires `vllm >= 0.6.0`. Please refer to `./Omni-Judge_eval/omni_judge_vllm.sh`.
 ```bash
 cd ./Omni-Judge_eval
 bash omni_judge.sh
 ```
-
+or
+```bash
+cd ./Omni-Judge_eval
+bash omni_judge_vllm.sh
+```
 ### 
 ## 🔍 Detailed Source of Omni-MATH
 ![alt text](./imgs/box_plot.png)
