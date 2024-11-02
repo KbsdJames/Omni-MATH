@@ -2,7 +2,7 @@ export CUDA_VISIBLE_DEVICES=0
 
 OUTFILE=""
 
-python3 omni_judge.py \
+python3 omni_judge_vllm.py \
     -i in_file.jsonl \
     -o  $OUTFILE \
     -m ./Omni_Judge_Model
